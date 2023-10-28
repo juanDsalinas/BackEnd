@@ -1,0 +1,10 @@
+Instalar las siguientes dependencias
+    pip install django
+    pip install djangorestframework
+
+comando para crear el projecto dentro de la carpeta actual
+    django-admin startproject restApi .
+
+correr el projecto
+    python manage.py runserver
+

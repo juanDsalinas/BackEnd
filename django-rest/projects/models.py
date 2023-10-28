@@ -1,0 +1,9 @@
+from django.db import models
+
+# Create your models here.
+# Create a table Project
+class Project(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    technology = models.CharField(max_length=200)
+    create_at = models.DateField(auto_now_add=True)
