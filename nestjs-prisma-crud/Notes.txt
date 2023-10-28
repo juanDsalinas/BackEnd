@@ -1,0 +1,20 @@
+Instalar el CLI de NestJs desde npm con:
+npm install -g @nestjs/cli
+
+iniciar el proyecto con:
+nest new project-name
+
+Instalar los modulos de Prisma:
+npm i prisma -D (esta configuracion solo
+se utiliza en desarrollo no en produccion)
+para produccion se utiliza @PrismaClient
+
+npx prisma init --datasource-provider sqlite
+si no ponemos nada despues del init, toma como
+SGBD Postgres
+
+ahora creamos una tabla y realizamos la 
+primera migracion:
+npx prisma migrate dev --name init
+
+me pinto pajaritos en el aire
